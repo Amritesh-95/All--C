@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    int ar, l, b;
+
+    printf("Please input Length and breadth \n");
+    scanf("%d%d", &l, &b);
+
+    ar = l * b;
+
+    printf("Area of rectangle is = %d", ar);
+
+    return 0;
+}
