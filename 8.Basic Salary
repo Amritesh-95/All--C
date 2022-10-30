@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    float BS, DA, HRA, PF, GS, NS;
+
+    printf("Input Basic Salary \n");
+    scanf("%f", &BS);
+
+    DA = BS * 25 / 100;
+    HRA = BS * 15 / 100;
+    GS = DA + HRA + BS;
+    PF = GS * 10 / 100;
+    NS = GS - PF;
+
+    printf("Net Salary is = %.2f", NS);
+    return 0;
+}
