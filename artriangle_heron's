@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int a, b, c, s, ar;
+
+    printf(" Input sides of triangle ");
+    scanf("%d%d%d", &a, &b, &c);
+    s = (a + b + c) / 2;
+    ar = sqrt(s * (s - a) * (s - b) * (s - c));
+
+    printf(" Area of triangle is = %d", ar);
+
+    return 0;
+}
