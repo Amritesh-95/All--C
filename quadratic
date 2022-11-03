@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float a, b, c, d, p, q;
+
+    printf(" Input constants a,b,c ");
+    scanf("%f%f%f", &a, &b, &c);
+    d = b * b - 4 * a * c;
+
+    if (d > 0)
+    {
+        p = (-b + sqrt(d)) / 2 * a;
+        q = (-b - sqrt(d)) / 2 * a;
+        printf(" Roots are real = %f \n %f ", p, q);
+    }
+    else
+    {
+        printf(" Roots are imaginary ");
+    }
+    return 0;
+}
