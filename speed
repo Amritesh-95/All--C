@@ -1,0 +1,12 @@
+#include <stdio.h>
+void main()
+{
+    float s, d, t;
+
+    printf(" Please input distance (in Km) & time (in Hr) ");
+    scanf("%f%f", &d, &t);
+
+    s = d / t;
+
+    printf(" Average speed = %f", s);
+}
