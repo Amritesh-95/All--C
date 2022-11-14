@@ -1,0 +1,21 @@
+#include <stdio.h>
+void main()
+{
+    int a, b, c;
+
+    printf(" Input three numbers ");
+    scanf("%d%d%d", &a, &b, &c);
+
+    if (a > b)
+    {
+        printf(" Number is greater = %d", a);
+    }
+    else if (c > a)
+    {
+        printf(" Number is greater = %d", c);
+    }
+    else
+    {
+        printf(" Number is greater = %d", b);
+    }
+}
