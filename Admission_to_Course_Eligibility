@@ -1,0 +1,31 @@
+#include <stdio.h>
+void main()
+{
+    float P, C, M, Q, T;
+
+    printf(" Input marks in P C M ");
+    scanf("%f%f%f", &P, &C, &M);
+
+    T = P + C + M;
+    Q = P + M;
+
+    if (T >= 200)
+    {
+        if (P >= 50)
+        {
+            if (C >= 40)
+            {
+                if (M >= 60)
+            }
+        }
+        printf(" Candidate eligible for Professional course ");
+    }
+    else if (Q >= 150)
+    {
+        printf(" Candidate eligible for Professional course ");
+    }
+    else
+    {
+        printf(" Candidate not eligible for Professional course ");
+    }
+}
