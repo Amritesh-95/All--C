@@ -1,0 +1,31 @@
+#include <stdio.h>
+void main()
+{
+    int n;
+
+    printf(" Input a number ");
+    scanf("%d", &n);
+
+    if (n > 5)
+    {
+        if (n % 2 == 0)
+        {
+            printf(" Number is even and greater than 5 = %d", n * n * n);
+        }
+        else
+        {
+            printf(" Number is odd and greater than 5 = %d", n * n);
+        }
+    }
+    else
+    {
+        if (n == 2)
+        {
+            printf(" Number is equal to 2 = %d", n + 5);
+        }
+        else
+        {
+            printf(" Number is not equal to 2 = %d", n - 1);
+        }
+    }
+}
