@@ -16,9 +16,9 @@ void main()
             if (C >= 40)
             {
                 if (M >= 60)
+                    printf(" Candidate eligible for Professional course ");
             }
         }
-        printf(" Candidate eligible for Professional course ");
     }
     else if (Q >= 150)
     {
