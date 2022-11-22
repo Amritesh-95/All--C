@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <math.h>
+void main()
+{
+    int opt;
+    float a, b, c;
+
+    printf(" Select option \n 1.Addition \n 2.Subtraction \n 3.Multiplication \n 4.Division \n 5.Square \n 6.Cube \n 7.Square root \n ");
+    scanf("%d", &opt);
+    switch (opt)
+
+    {
+    case 1:
+        printf(" Input two numbers ");
+        scanf("%f%f", &a, &b);
+        printf(" Sum is = %f", c);
+        c = a + b;
+        break;
+
+    case 2:
+        printf(" Input two numbers ");
+        scanf("%f%f", &a, &b);
+        c = a - b;
+        printf(" Subtraction is = %f", c);
+        break;
+
+    case 3:
+        printf(" Input two numbers ");
+        scanf("%f%f", &a, &b);
+        c = a * b;
+        printf(" Multiplication is = %f", c);
+        break;
+
+    case 4:
+        printf(" Input two numbers ");
+        scanf("%f%f", &a, &b);
+        c = a / b;
+        printf(" Division is = %f", c);
+        break;
+
+    case 5:
+        printf(" Input a number ");
+        scanf("%f", &a);
+        c = a * a;
+        printf(" Square is = %f", c);
+        break;
+
+    case 6:
+        printf(" Input a number ");
+        scanf("%f", &a);
+        c = a * a * a;
+        printf(" Cube is = %f", c);
+        break;
+
+    case 7:
+        printf(" Input a number ");
+        scanf("%f", &a);
+        c = sqrt(a);
+        printf(" Square root is = %f", c);
+        break;
+
+    default:
+        printf(" Invalid Choice ");
+    }
+}
