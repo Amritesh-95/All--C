@@ -1,0 +1,106 @@
+#include <stdio.h>
+#include <math.h>
+void main()
+{
+    int opt, n;
+    float a, b, c, d, p, q;
+
+    printf(" Select option \n 1.To check Even/Odd \n 2.To compare 3 numbers and print bigger number \n 3.To calculate roots of quadratic equations \n 4.To check if given year is leap year or not \n 5.To locate point in a 2-D plane \n ");
+    scanf("%d", &opt);
+    switch (opt)
+
+    {
+    case 1:
+
+        printf(" Input any number ");
+        scanf("%d", &n);
+
+        if (n % 2 == 0)
+        {
+            printf("Given number is Even");
+        }
+        else
+        {
+            printf("Given number is Odd");
+        }
+        break;
+
+    case 2:
+        printf(" Input any three numbers ");
+        scanf("%f%f%f", &a, &b, &c);
+
+        if (a > b && a > c)
+        {
+            printf(" a is maximum = %d", a);
+        }
+        else if (b > c && b > a)
+        {
+            printf(" b is maximum = %d", b);
+        }
+        else
+        {
+            printf(" c is maximum = %d", c);
+        }
+        break;
+
+    case 3:
+        printf(" Input constants a,b,c ");
+        scanf("%f%f%f", &a, &b, &c);
+        d = b * b - 4 * a * c;
+
+        if (d >= 0)
+        {
+            p = (-b + sqrt(d)) / 2 * a;
+            q = (-b - sqrt(d)) / 2 * a;
+            printf(" Given quadratic has Roots are real = %f \n %f ", p, q);
+        }
+        else
+        {
+            printf(" Given quadratic has imaginary roots ");
+        }
+        break;
+
+    case 4:
+        printf(" Please input a year ");
+        scanf("%d", &n);
+
+        if ((n % 4 == 0 && n % 100 != 0) || n % 400 == 0)
+        {
+            printf("Given year is a leap year", n);
+        }
+        else
+        {
+            printf("Given year is not a leap year");
+        }
+        break;
+
+    case 5:
+        printf(" Input (a,b) coordinate ");
+        scanf("%f%f", &a, &b);
+
+        if (a > 0 && b > 0)
+        {
+            printf(" First quadrant ");
+        }
+        else if (a < 0 && b > 0)
+        {
+            printf(" Second quadrant ");
+        }
+        else if (a < 0 && b < 0)
+        {
+            printf(" Third quadrant ");
+        }
+        else if (a > 0 && b < 0)
+        {
+            printf(" Fourth quadrant ");
+        }
+        else
+        {
+            printf(" ORIGIN ");
+        }
+        break;
+
+    default:
+        printf(" Now you can explore any project idea if interested!!! ");
+    }
+}
