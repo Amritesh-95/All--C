@@ -73,6 +73,6 @@ void main()
         }
 
         printf("Entre yes(1) to continue or No(0) to stop\n");
-        scanf("%i", &choice);
+        scanf("%d", &choice);
     } while (choice != 0);
 }
