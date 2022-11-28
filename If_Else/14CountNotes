@@ -1,0 +1,72 @@
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    int note2000, note500, note200, note100, note50, note20, note10, note5, note2, note1;
+
+    printf("Enter n: ");
+    scanf("%d", &n);
+
+    if (n >= 2000)
+    {
+        note2000 = n / 2000;
+        n = n - note2000 * 2000;
+        printf("Number of 2000notes = %d\n", note2000);
+    }
+
+    if (n >= 500)
+    {
+        note500 = n / 500;
+        n = n - note500 * 500;
+        printf("Number of 500notes = %d\n", note500);
+    }
+    if (n >= 200)
+    {
+        note200 = n / 200;
+        n = n - note200 * 200;
+        printf("Number of 200notes = %d\n", note200);
+    }
+    if (n >= 100)
+    {
+        note100 = n / 100;
+        n = n - note100 * 100;
+        printf("Number of 100notes = %d\n", note100);
+    }
+    if (n >= 50)
+    {
+        note50 = n / 50;
+        n = n - note50 * 50;
+        printf("Number of 50notes = %d\n", note50);
+    }
+    if (n >= 20)
+    {
+        note20 = n / 20;
+        n = n - note20 * 20;
+        printf("Number of 20notes = %d\n", note20);
+    }
+    if (n >= 10)
+    {
+        note10 = n / 10;
+        n = n - note10 * 10;
+        printf("Number of 10notes = %d\n", note10);
+    }
+    if (n >= 5)
+    {
+        note5 = n / 5;
+        n = n - note5 * 5;
+        printf("Number of 5notes = %d\n", note5);
+    }
+    if (n >= 2)
+    {
+        note2 = n / 2;
+        n = n - note2 * 2;
+        printf("Number of 2notes = %d\n", note2);
+    }
+    if (n >= 1)
+    {
+        note1 = n;
+        printf("Number of 1notes = %d\n", note1);
+    }
+    return 0;
+}
