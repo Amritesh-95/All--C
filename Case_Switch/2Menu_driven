@@ -31,15 +31,15 @@ void main()
 
         if (a > b && a > c)
         {
-            printf(" a is maximum = %d", a);
+            printf(" a is maximum = %f", a);
         }
         else if (b > c && b > a)
         {
-            printf(" b is maximum = %d", b);
+            printf(" b is maximum = %f", b);
         }
         else
         {
-            printf(" c is maximum = %d", c);
+            printf(" c is maximum = %f", c);
         }
         break;
 
