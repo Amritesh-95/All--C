@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+    int n, i = 1, a = 0, b = 1, c = 0;
+
+    scanf("%d", &n);
+
+    for (; i <= n; i++)
+    {
+        a = b;
+        b = c;
+        c = a + b;
+        printf("%d\n", c);
+    }
+    return 0;
+}
+
+
+
+Using While
+
+
