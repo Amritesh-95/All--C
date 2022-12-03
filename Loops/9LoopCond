@@ -1,0 +1,41 @@
+#include <stdio.h>
+int main()
+{
+
+    int n, i = 1, f = 1, sum = 0, a = 0, b = 1, c = 0;
+
+    printf("Input a number n\n");
+    scanf("%d", &n);
+
+    if (n % 2 != 0)
+    {
+        if (n > 5)
+        {
+            for (; i <= n; i++)
+            {
+                f = f * i;
+            }
+            printf("%d", f);
+        }
+        else
+        {
+            for (; i <= n; i++)
+            {
+                a = b;
+                b = c;
+                c = a + b;
+                printf("%d\n", c);
+            }
+        }
+    }
+    else
+    {
+        for (; i <= n; i++)
+        {
+            sum = sum + i;
+        }
+        printf("%d", sum);
+    }
+
+    return 0;
+}
