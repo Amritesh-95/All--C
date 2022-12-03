@@ -1,0 +1,58 @@
+#include <stdio.h>
+int main()
+{
+
+    int sum = 0, n, i = 2;
+    printf(" Input number till you want sum ");
+    scanf("%d", &n);
+
+    for (; i <= n; i = i + 2)
+    {
+        sum = sum + i;
+    }
+    printf("%d", sum);
+    return 0;
+}
+
+
+
+
+Using While
+
+
+#include <stdio.h>
+int main()
+{
+
+    int sum = 0, n, i = 2;
+    printf(" Input number till you want sum ");
+    scanf("%d", &n);
+
+    while (i <= n)
+    {
+        sum = sum + i;
+        i = i + 2;
+    }
+    printf("%d", sum);
+    return 0;
+}
+
+
+Using Do While
+
+
+#include <stdio.h>
+int main()
+{
+
+    int sum = 0, n, i = 2;
+    printf(" Input number till you want sum ");
+    scanf("%d", &n);
+    do
+    {
+        sum = sum + i;
+        i = i + 2;
+    } while (i <= n);
+    printf("%d", sum);
+    return 0;
+}
