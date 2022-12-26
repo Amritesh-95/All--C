@@ -7,10 +7,10 @@ int main()
 
     for (; i <= n; i++)
     {
+        printf("%d\n", c);
         a = b;
         b = c;
         c = a + b;
-        printf("%d\n", c);
     }
     return 0;
 }
