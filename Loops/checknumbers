@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main()
+{
+
+    int a, b, c, d, remainder, count = 0, flag = 0, remain;
+    printf(" Input a number \n");
+    scanf("%d", &a);
+
+    b = a;
+    c = a;
+    while (b != 0)
+    {
+        remainder = b % 10;
+        while (c != 0)
+        {
+            remain = c % 10;
+            if (remain == remainder)
+            {
+                count++;
+            }
+            c = c / 10;
+        }
+        printf(" Number of time %d appeared is %d\n", remainder, count);
+        c = a;
+        remainder = 0;
+        count = 0;
+        b = b / 10;
+    }
+    return 0;
+}
