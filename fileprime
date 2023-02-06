@@ -1,0 +1,54 @@
+#include <stdio.h>
+int fact(int);
+int main()
+{
+    int n, flag = 0, count = 0, rev = 0, rem, k;
+    FILE *P;
+    P = fopen("A.txt", "r");
+    for (!feof(P))
+    {
+        fscanf(P, "%d", &n);
+        for (int i = 2, i <= n / 2; i++)
+        {
+            if (n % i == 0)
+            {
+                flag = 1;
+                break;
+            }
+        }
+        if (flag == 0)
+        {
+            printf(" %d is prime number ", n);
+            k = fact(n);
+            printf(" factorial is %d", k);
+            do
+            {
+                fact = fact / 10;
+                ++count;
+            } while (fact != 0);
+            printf("number of digits is %d", count);
+            if (count == 5)
+            {
+                while (fact != 0)
+                {
+                    rem = fact / 10;
+                    rev = rev * 10 + rem;
+                    fact = fact / 10;
+                    printf("rev = %d", rev);
+                }
+            }
+        }
+        else
+    }
+
+    return 0;
+}
+int fact(int m)
+{
+    int i = 1, f = 1;
+    for (; i <= m; i++)
+    {
+        f = f * i;
+    }
+    return f;
+}
